@@ -9,7 +9,7 @@ export async function send(payload, type) {
     }
 
     const body = { text, key };
-    const url = `http://localhost:4000/api/vigenere/${type}`;
+    const url = `https://cryptography-backend-s3te.onrender.com/api/vigenere/${type}`;
 
     try {
         const res = await fetch(url, {

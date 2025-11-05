@@ -10,7 +10,7 @@ export async function send(payload, type) {
     }
 
     const body = { text, key };
-    const url = `http://localhost:4000/api/railfence/${type}`; // Matches backend route structure
+    const url = `https://cryptography-backend-s3te.onrender.com/api/railfence/${type}`; // Matches backend route structure
 
     try {
         const res = await fetch(url, {

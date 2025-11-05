@@ -8,7 +8,7 @@ export async function send(payload, type) {
     }
 
     const body = { text, shift };
-    const url = `http://localhost:4000/api/caesar/${type}`;
+    const url = `https://cryptography-backend-s3te.onrender.com/api/caesar/${type}`;
 
     try {
         const res = await fetch(url, {

@@ -8,7 +8,7 @@ export async function send(payload, type) {
     }
 
     const body = { text, a, b };
-    const url = `http://localhost:4000/api/affine/${type}`;
+    const url = `https://cryptography-backend-s3te.onrender.com/api/affine/${type}`;
 
     try {
         const res = await fetch(url, {

@@ -16,7 +16,7 @@ export async function send(payload, type) {
     }
 
     const body = { text, key };
-    const url = `http://localhost:4000/api/hill/${type}`;
+    const url = `https://cryptography-backend-s3te.onrender.com/api/hill/${type}`;
 
     try {
         const res = await fetch(url, {
